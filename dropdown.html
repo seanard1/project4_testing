@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns</title>
+</head>
+<body>
+
+    <label for="visibility">Visibility:</label>
+    <select id="visibility">
+        <option value="visibilityClear">Clear</option>
+        <option value="visibilityRain">Rain</option>
+        <option value="visibilitySnow">Snow</option>
+        <option value="visibilityOther">Other</option>
+    </select>
+
+    <label for="roadConditions">Road Conditions:</label>
+    <select id="roadConditions">
+        <option value="roadConditionsDry">Dry</option>
+        <option value="roadConditionsWet">Wet</option>
+        <option value="roadConditionsOther">Other</option>
+        <option value="roadConditionsLooseSnow">Loose Snow</option>
+    </select>
+
+    <label for="impactType">Type of Crash:</label>
+    <select id="impactType">
+        <option value="impactTypePedestrian">Pedestrian</option>
+        <option value="impactTypeOther">Other</option>
+        <option value="impactTypeTurning">Turning</option>
+        <option value="impactTypeCyclist">Cyclist</option>
+        <option value="impactTypeRearEnd">Rear End</option>
+        <option value="impactTypeSMV">Single-Motor Vehicle</option>
+    </select>
+
+    <button id="checkButton">Check Selected Options</button>
+
+    <script>
+        document.getElementById("checkButton").addEventListener("click", function() {
+            var selectedVisibility = document.getElementById("visibility").value;
+            var selectedOption2 = document.getElementById("roadConditions").value;
+            var selectedOption3 = document.getElementById("impactType").value;
+
+            // console.log("Selected Options:\nDropdown 1: " + selectedVisibility + "\nDropdown 2: " + selectedOption2 + "\nDropdown 3: " + selectedOption3);
+        });
+    </script>
+
+</body>
+</html>

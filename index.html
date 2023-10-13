@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Crash Calculator</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <label for="speed">Speeding:</label>
+  <button class="toggleButton toggleButtonSpeed"></button>
+
+  <br />
+
+  <label for="aggressive">Aggressive Driving:</label>
+  <button class="toggleButton toggleButtonAggressive"></button>
+
+  <br />
+
+  <label for="alcohol">Alcohol Impaired:</label>
+  <button class="toggleButton toggleButtonAlcohol"></button>
+
+  <br />
+
+  <label for="redlight">Red Light Violation:</label>
+  <button class="toggleButton toggleButtonRedlight"></button>
+
+  <br />
+
+  <label for="over70">Over 70 years old:</label>
+  <button class="toggleButton toggleButtonOver70"></button>
+
+  <br />
+
+  <label for="teen">Teen Driver:</label>
+  <button class="toggleButton toggleButtonTeen"></button>
+
+  <br />
+
+  <label for="visibility">Visibility:</label>
+  <select id="visibility">
+      <option value="visibilityClear">Clear</option>
+      <option value="visibilityRain">Rain</option>
+      <option value="visibilitySnow">Snow</option>
+      <option value="visibilityOther">Other</option>
+  </select>
+
+  <br />
+
+  <label for="roadConditions">Road Conditions:</label>
+  <select id="roadConditions">
+      <option value="roadConditionsDry">Dry</option>
+      <option value="roadConditionsWet">Wet</option>
+      <option value="roadConditionsOther">Other</option>
+      <option value="roadConditionsLooseSnow">Loose Snow</option>
+  </select>
+
+  <br />
+
+  <label for="impactType">Type of Crash:</label>
+  <select id="impactType">
+      <option value="impactTypePedestrian">Pedestrian</option>
+      <option value="impactTypeOther">Other</option>
+      <option value="impactTypeTurning">Turning</option>
+      <option value="impactTypeCyclist">Cyclist</option>
+      <option value="impactTypeRearEnd">Rear End</option>
+      <option value="impactTypeSMV">Single-Motor Vehicle</option>
+  </select>
+
+  <br />
+
+  <button id="checkButton">Calculate</button>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script> 
+    <script src="script.js"></script> 
+</body>
+</html>
